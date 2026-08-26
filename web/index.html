@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>併購・公司治理 法規查詢台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="top">
+  <button class="icon-btn" id="menuBtn" aria-label="開啟目錄">☰</button>
+  <div class="brand" role="button" tabindex="0" id="homeBtn" title="回首頁">
+    <div class="seal">法</div>
+    <div class="wm"><b>併購・公司治理法規台</b><span>M&amp;A · GOVERNANCE</span></div>
+  </div>
+  <div class="cmd">
+    <span class="glyph">⌕</span>
+    <input id="cmd" type="text" autocomplete="off" spellcheck="false"
+      placeholder="輸入關鍵字，或打「證交 43-1」「公平 11」直接跳條文…" aria-label="法條指令列與關鍵字搜尋" />
+    <span class="hint">↵ 跳條文</span>
+  </div>
+  <div class="top-actions">
+    <button class="icon-btn" id="themeBtn" aria-label="切換深色模式"><span id="themeIcon">🌙</span></button>
+  </div>
+</header>
+
+<div class="shell">
+  <div class="backdrop" id="backdrop"></div>
+  <aside class="side" id="side">
+    <div class="side-label">🤖 AI 助理</div>
+    <div id="aiNav"></div>
+
+    <div class="side-label">法規</div>
+    <div id="lawNav"></div>
+    <div class="side-label">⭐ 我的收藏</div>
+    <div id="favList"></div>
+    <div class="side-label">📌 常用入口</div>
+    <div id="portalList"></div>
+  </aside>
+  <main id="main"></main>
+  </div>
+  <footer id="siteFooter">
+    <div class="foot-inner">
+      <b>免責聲明</b>　本站彙整之條文摘要、問答與函釋連結僅供法規研究與實務導覽，
+      <b>非法律意見</b>，亦不構成任何投資或交易建議。條文摘要為便於檢索之白話整理，
+      法律效力一律以官方原文為準；函釋為主管機關行政見解，非法院見解。
+      個案請諮詢專業律師。使用本站即表示您理解並同意上述說明。
+      <span class="foot-sep">·</span>
+      資料來源：全國法規資料庫、金管會、公平會、經濟部投資審議司、證交所、證基會。
+      <span class="foot-sep">·</span>
+      <a href="https://github.com/" target="_blank" rel="noopener">原始碼</a>（MIT 授權）
+    </div>
+  </footer>
+<script src="build-flags.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="ai.js"></script>
+</body>
+</html>
