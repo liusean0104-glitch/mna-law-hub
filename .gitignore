@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+node_modules/
+# generated frontend data (regenerate with scripts/export_web.py)
+# comment the next line out if you prefer to commit it
+# web/data.js
+.env
